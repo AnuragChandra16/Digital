@@ -99,7 +99,7 @@ brew services start mongodb-community
 ## 🟢 Step 2 — Clone Repository
 
 ```bash
-git clone <YOUR_REPO_LINK>
+git clone <https://github.com/AnuragChandra16/Digital>
 cd Digital
 ```
 
