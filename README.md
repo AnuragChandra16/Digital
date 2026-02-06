@@ -215,12 +215,11 @@ JWT_SECRET=secretkey
 # 👨‍💻 Author
 
 Anurag Chandra
-<img width="1264" height="914" alt="image" src="https://github.com/user-attachments/assets/64e69f2a-a904-4c1b-bccc-a319f79dc85e" />
+<img width="1287" height="694" alt="image" src="https://github.com/user-attachments/assets/dc84a015-2dce-4979-8e69-daaa93d788cc" />
+
+
+
 <img width="1264" height="914" alt="image" src="https://github.com/user-attachments/assets/64e69f2a-a904-4c1b-bccc-a319f79dc85e" />
 
-![Uploading image.png…]()
-![Uploading image.png…]()
-![Uploading image.png…]()
-![Uploading image.png…]()
 
 
