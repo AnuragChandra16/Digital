@@ -1,8 +1,9 @@
-🚀 Digital Task Manager (Full Stack MERN)
+# 🚀 Digital Task Manager (Full Stack MERN)
 
-A full-stack Task Management Web Application with Authentication.
+A full-stack **Task Management Web Application** with secure authentication and per-user task storage.
 
 Built using:
+
 - Node.js
 - Express.js
 - MongoDB
@@ -11,30 +12,33 @@ Built using:
 
 ---
 
-## 🌐 Live Demo
+# 🌐 Live Demo
 
-Frontend:  🔗 <ADD_YOUR_VERCEL_LINK_HERE>  
-Backend API: 🔗 <ADD_YOUR_RENDER_LINK_HERE>
+### Frontend
+🔗 https://digital-nine-xi.vercel.app/
+
+### Backend API
+🔗 https://digital-bxk7.onrender.com/
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-### 🔐 Authentication
+## 🔐 Authentication
 - Register user
 - Login user
 - JWT token authentication
 - Logout
 - Each user sees ONLY their own tasks
 
-### ✅ Task Management (CRUD)
+## ✅ Task Management (CRUD)
 - Add task
 - View tasks
 - Update task
 - Delete task
 - Mark complete
 
-### 🎨 UI
+## 🎨 UI
 - Responsive layout
 - Clean modern design
 - Gradient background
@@ -44,144 +48,164 @@ Backend API: 🔗 <ADD_YOUR_RENDER_LINK_HERE>
 
 # 📂 Project Structure
 
+```
 Digital/
 │
 ├── Backend/
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ ├── server.js
-│ ├── package.json
-│ ├── .env.example
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── server.js
+│   ├── package.json
+│   ├── .env.example
 │
 ├── Frontend/
-│ ├── index.html
-│ ├── style.css
-│ ├── script.js
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
 │
 ├── .gitignore
 └── README.md
-
+```
 
 ---
 
-# 💻 Run Project Locally (NO Atlas Required)
+# 💻 Run Project Locally (No Atlas Required)
 
-This project runs using **local MongoDB**, so reviewers DO NOT need my database.
+This project runs using **local MongoDB**, so reviewers **do not need my cloud database or credentials**.
 
 ---
 
 ## 🟢 Step 1 — Install MongoDB Community
 
-Download & install:
-👉 https://www.mongodb.com/try/download/community
+Download and install:
 
-After install, start MongoDB server:
+https://www.mongodb.com/try/download/community
+
+Start MongoDB server:
 
 ### Windows
+```bash
 mongod
-
+```
 
 ### Mac/Linux
+```bash
 brew services start mongodb-community
-
+```
 
 ---
 
-## 🟢 Step 2 — Clone repository
+## 🟢 Step 2 — Clone Repository
 
+```bash
 git clone <YOUR_REPO_LINK>
 cd Digital
-
+```
 
 ---
 
-## 🟢 Step 3 — Backend setup
+## 🟢 Step 3 — Backend Setup
 
+```bash
 cd Backend
 npm install
-
+```
 
 Create environment file:
 
+```bash
 cp .env.example .env
+```
 
+Start backend:
 
-Start server:
-
+```bash
 npm start
+```
 
+Backend runs at:
 
-Backend runs on:
+```
 http://localhost:5000
-
+```
 
 ---
 
-## 🟢 Step 4 — Run frontend
+## 🟢 Step 4 — Run Frontend
 
-Open:
+Open this file directly in browser:
 
+```
 Frontend/index.html
-
-
-in browser
+```
 
 ---
 
-✅ Done! App will now work locally with:
+## ✅ Done
 
+App now runs locally using:
+
+```
 mongodb://127.0.0.1:27017/digital_tasks
+```
 
+No Atlas or cloud setup required.
 
 ---
 
 # 🌍 Deployment
 
-## Backend (Render)
+## Backend — Render
 - Hosted on Render
-- Environment variables set in dashboard
+- Uses MongoDB Atlas
+- Environment variables configured in dashboard
 
-## Frontend (Vercel)
+## Frontend — Vercel
 - Hosted on Vercel
-- Uses deployed backend API
+- Connects to deployed backend API
 
 ---
 
 # 📌 API Endpoints
 
 ## Auth
-POST /api/auth/register  
-POST /api/auth/login  
+```
+POST /api/auth/register
+POST /api/auth/login
+```
 
 ## Tasks
-GET /api/tasks  
-POST /api/tasks  
-PUT /api/tasks/:id  
-DELETE /api/tasks/:id  
+```
+GET    /api/tasks
+POST   /api/tasks
+PUT    /api/tasks/:id
+DELETE /api/tasks/:id
+```
 
 ---
 
 # 🔐 Environment Variables
 
-Example:
+Example `.env`:
 
+```
 MONGO_URI=mongodb://127.0.0.1:27017/digital_tasks
 PORT=5000
 JWT_SECRET=secretkey
-
+```
 
 ---
 
 # 🧠 Tech Stack
 
-### Backend
+## Backend
 - Express.js
 - MongoDB + Mongoose
 - JWT
 - bcrypt
 
-### Frontend
+## Frontend
 - HTML
 - CSS
 - Vanilla JavaScript
