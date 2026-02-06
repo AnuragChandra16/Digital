@@ -1,0 +1,74 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>✨ Digital Task Manager</h1>
+
+
+  <!-- ================= LOGIN ================= -->
+  <div id="loginSection">
+
+    <input id="loginEmail" placeholder="Email">
+    <input id="loginPassword" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p class="switch" onclick="showRegister()">
+      Don't have account? Register
+    </p>
+  </div>
+
+
+
+  <!-- ================= REGISTER ================= -->
+  <div id="registerSection" style="display:none;">
+
+    <input id="regName" placeholder="Name">
+    <input id="regEmail" placeholder="Email">
+    <input id="regPassword" type="password" placeholder="Password">
+
+    <button onclick="register()">Register</button>
+
+    <p class="switch" onclick="showLogin()">
+      Already have account? Login
+    </p>
+  </div>
+
+
+
+  <!-- ================= TASKS ================= -->
+  <div id="taskSection" style="display:none;">
+
+    <button onclick="logout()" class="logoutBtn">Logout</button>
+
+    <div class="form">
+      <input id="title" placeholder="Task title">
+
+      <textarea id="desc"
+        rows="1"
+        placeholder="Description"
+        oninput="autoResize(this)">
+      </textarea>
+
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div id="taskList" class="tasks"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

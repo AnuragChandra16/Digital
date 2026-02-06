@@ -1,0 +1,207 @@
+/* body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+} */
+/* full page center */
+/* ===== Page Center ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+}
+
+
+/* ===== White Card ===== */
+.container {
+  width: 600px;          /* wider */
+  max-width: 95%;
+
+  background: white;
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+
+/* ===== Title ===== */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+
+  font-size: 28px;       /* bigger */
+  font-weight: bold;
+}
+
+
+/* ===== Form ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+/* ===== Inputs ===== */
+input, textarea {
+  padding: 14px;
+
+  border-radius: 12px;
+  border: 1px solid #ddd;
+
+  font-size: 16px;       /* bigger text */
+}
+
+
+/* ===== Buttons ===== */
+button {
+  padding: 12px;
+
+  font-size: 15px;       /* bigger */
+  font-weight: bold;
+
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  background: #4e73df;
+  color: white;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+}
+
+
+/* ===== Tasks List ===== */
+.tasks {
+  margin-top: 30px;
+}
+
+
+/* ===== Each Task Card ===== */
+.task {
+  background: #f8f9fc;
+
+  padding: 16px;
+  border-radius: 14px;
+
+  margin-bottom: 14px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* ===== Text inside tasks ===== */
+.task-title {
+  font-weight: bold;
+  font-size: 17px;      /* bigger */
+}
+
+.task-desc {
+  font-size: 14px;      /* bigger */
+  color: gray;
+  margin-top: 4px;
+}
+
+
+/* ===== Completed style ===== */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+
+/* ===== Small action buttons ===== */
+.actions button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  background: #858796;
+}
+
+/* auth area */
+.auth {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.authBtns {
+  display: flex;
+  gap: 8px;
+}
+
+.switch {
+  margin-top: 12px;
+  color: #4e73df;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+.logoutBtn {
+  background: crimson;
+  margin-bottom: 15px;
+}
